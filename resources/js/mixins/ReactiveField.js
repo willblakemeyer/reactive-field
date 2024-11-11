@@ -41,8 +41,8 @@ export default {
             this.fieldsWithValues.resourceId = this.resourceId;
             this.fieldsWithValues[e.field_name] = e.value;
 
-            // let urlPrefix = '/fifteen-group/nova-compact-reactive-ui/calculate';
-            let urlPrefix = '/fifteen-group/nova-reactive-field';
+            let urlPrefix = '/fifteen-group/nova-compact-reactive-ui/calculate';
+            // let urlPrefix = '/fifteen-group/nova-reactive-field';
 
             Nova.request().post(
                 `${urlPrefix}/${this.resourceName}/${this.field.attribute}`,
